@@ -11,7 +11,7 @@ get_tmux_option() {
    local option=$1
    local option_value
    option_value=$(tmux show-option -gqv "$option")
-   echo "$option_value"
+   echo "test $option_value"
 }
 
 # do_interpolation() {
